@@ -1,21 +1,35 @@
-import "./Home.css";
+import { useParams } from "react-router-dom";
 import { cards } from "../constants";
-import Card from "../components/Card/Card";
 
-const Home = () => {
+const Product = () => {
+  const { id } = useParams();
+  const product = cards.find((product) => product.id === +id);
   return (
     <>
       <section className="content">
         <div className="container">
           <div className="content-box">
-            <div className="content-main">
-              <h2 className="content-main__title">Рекомендации для вас</h2>
-              <div className="content-main__list">
-                {cards.map((item) => (
-                  <Card key={item.id} card={item} />
-                ))}
+            {product ? (
+              <div className="content-product">
+                <div className="content-product__left">
+                  <h3 className="content-product__title">{product.title}</h3>
+                  <img
+                    src={product.img}
+                    alt="product"
+                    className="content-product__img"
+                  />
+                  <p className="content-product__text">{product.desription}</p>
+                </div>
+                <div className="content-product__right">
+                  <h3 className="content-product__price">{product.price}</h3>
+                  <button className="btn btn-primary btn-find-phone">
+                    Показать телефон
+                  </button>
+                </div>
               </div>
-            </div>
+            ) : (
+              <h1>Такого товара не нашлось</h1>
+            )}
             <div className="content-side">
               <h3 className="content-side__title">Сервисы и услуги</h3>
               <div className="content-side__box">
@@ -76,5 +90,4 @@ const Home = () => {
     </>
   );
 };
-
-export default Home;
+export default Product;

@@ -6,6 +6,7 @@ export const cards = [
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "/images/card.svg",
+    desription: "Котик говорит мяу))",
   },
   {
     id: 1,
@@ -14,6 +15,7 @@ export const cards = [
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "/images/card.svg",
+    desription: "Котик говорит мяу))",
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ export const cards = [
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "/images/card.svg",
+    desription: "Котик говорит мяу))",
   },
   {
     id: 3,
@@ -30,6 +33,7 @@ export const cards = [
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "/images/card.svg",
+    desription: "Котик говорит мяу))",
   },
   {
     id: 4,
@@ -38,6 +42,7 @@ export const cards = [
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "/images/card.svg",
+    desription: "Котик говорит мяу))",
   },
   {
     id: 5,
@@ -46,5 +51,6 @@ export const cards = [
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "/images/card.svg",
+    desription: "Котик говорит мяу))",
   },
 ];

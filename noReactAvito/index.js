@@ -2,6 +2,8 @@ const card_wrapper = document.querySelector(".content-main__list");
 const searchBtn = document.querySelector(".btn-search");
 const searchInput = document.querySelector(".search-box input");
 
+console.log(0 >=null);
+
 const cards = [
   {
     id: 0,
@@ -9,7 +11,7 @@ const cards = [
     price: "170 ₽",
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
-    img: "/images/card.svg",
+    img: "/noReactAvito/images/card.svg",
   },
   {
     id: 1,
@@ -17,7 +19,7 @@ const cards = [
     price: "171 ₽",
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
-    img: "/images/card.svg",
+    img: "/noReactAvito/images/card.svg",
   },
   {
     id: 2,
@@ -25,7 +27,7 @@ const cards = [
     price: "172 ₽",
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
-    img: "/images/card.svg",
+    img: "/noReactAvito/images/card.svg",
   },
   {
     id: 3,
@@ -33,7 +35,7 @@ const cards = [
     price: "173 ₽",
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
-    img: "/images/card.svg",
+    img: "/noReactAvito/images/card.svg",
   },
   {
     id: 4,
@@ -41,7 +43,7 @@ const cards = [
     price: "174 ₽",
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
-    img: "/images/card.svg",
+    img: "/noReactAvito/images/card.svg",
   },
   {
     id: 5,
@@ -49,7 +51,7 @@ const cards = [
     price: "175 ₽",
     place: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
-    img: "/images/card.svg",
+    img: "/noReactAvito/images/card.svg",
   },
 ];
 
