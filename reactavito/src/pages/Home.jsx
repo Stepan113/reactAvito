@@ -1,8 +1,9 @@
 import "./Home.css";
-import { cards } from "../constants";
 import Card from "../components/Card/Card";
+import { useOutletContext } from "react-router-dom";
 
 const Home = () => {
+  const { products } = useOutletContext();
   return (
     <>
       <section className="content">
@@ -11,9 +12,11 @@ const Home = () => {
             <div className="content-main">
               <h2 className="content-main__title">Рекомендации для вас</h2>
               <div className="content-main__list">
-                {cards.map((item) => (
-                  <Card key={item.id} card={item} />
-                ))}
+                {products ? (
+                  products.map((item) => <Card key={item.id} card={item} />)
+                ) : (
+                  <div>Увы, такого товара нет</div>
+                )}
               </div>
             </div>
             <div className="content-side">
